@@ -27,9 +27,9 @@ const fiveCreditsPriceId = process.env.STRIPE_PRICE_ID_FIVE_CREDITS as string;
 const creditsPerPriceId: {
   [key: string]: number;
 } = {
-  [oneCreditPriceId]: 50,
-  [threeCreditsPriceId]: 100,
-  [fiveCreditsPriceId]: 150,
+  [oneCreditPriceId]: 1,
+  [threeCreditsPriceId]: 3,
+  [fiveCreditsPriceId]: 5,
 };
 
 export async function POST(request: Request) {

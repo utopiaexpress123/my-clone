@@ -41,7 +41,7 @@ export default async function Index({ params }: { params: { id: string } }) {
   const { data: samples } = await supabase.from("samples").select("*").eq("modelId", model.id);
 
   return (
-    <div id="train-model-container" className="w-full h-full">
+    <div id="train-model-container" className="w-full">
       <div className="flex flex-row gap-4">
         <Link href="/overview" className="text-xs w-fit">
           <Button variant={"outline"} className="text-xs" size="sm">

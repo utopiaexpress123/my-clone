@@ -21,7 +21,6 @@ export default async function Index() {
 
   return (
     <div className="flex flex-col items-center pt-16">
-      <FirstScreen/>
       <PricingSection />
     </div>
   );

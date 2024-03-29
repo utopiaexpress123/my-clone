@@ -48,7 +48,7 @@ export default async function Login() {
      data-itp_support="true">
 </div>
 
-<div className="g_id_signin"
+<div class="g_id_signin"
      data-type="standard"
      data-shape="pill"
      data-theme="outline"

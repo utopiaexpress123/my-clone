@@ -10,12 +10,20 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 
+import { LoginLink } from "@kinde-oss/kinde-auth-nextjs/components";
+import { RegisterLink } from "@kinde-oss/kinde-auth-nextjs/components";
+
+
 export const dynamic = "force-dynamic";
 
 
 export default async function Login() {
   return (
     <div className="flex-1 flex flex-col w-full px-8 sm:max-w-md justify-center gap-2">
+
+<LoginLink>Sign in</LoginLink>
+<RegisterLink>Sign up</RegisterLink>
+
       <form
         className="flex-1 flex flex-col w-full justify-center gap-2 "
         action="/auth/sign-in"

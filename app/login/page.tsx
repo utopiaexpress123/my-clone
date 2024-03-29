@@ -41,15 +41,15 @@ export default async function Login() {
             <Button>Continue</Button>
             <Messages />
 
-<div id="g_id_onload"
+<Button id="g_id_onload"
      data-client_id="https://faceid.utopia.express/overview"
      data-context="signin"
      data-ux_mode="popup"
      data-callback="handleSignInWithGoogle"
      data-itp_support="true">
-</div>
+</Button>
 
-<div className="g_id_signin"
+<Button className="g_id_signin"
      data-type="standard"
      data-shape="pill"
      data-theme="outline"
@@ -57,7 +57,7 @@ export default async function Login() {
      data-size="large"
      data-logo_alignment="left">
       google
-</div>
+</Button>
           </CardContent>
           <CardFooter>
             <p className="text-sm">

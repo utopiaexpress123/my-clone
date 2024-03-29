@@ -16,25 +16,6 @@ export const dynamic = "force-dynamic";
 export default async function Login() {
   return (
     <div className="flex-1 flex flex-col w-full px-8 sm:max-w-md justify-center gap-2">
-
-<Button id="g_id_onload"
-     data-client_id="https://faceid.utopia.express/overview"
-     data-context="signin"
-     data-ux_mode="popup"
-     data-callback="handleSignInWithGoogle"
-     data-itp_support="true">
-</Button>
-
-<Button className="g_id_signin"
-     data-type="standard"
-     data-shape="pill"
-     data-theme="outline"
-     data-text="signin_with"
-     data-size="large"
-     data-logo_alignment="left">
-      google
-</Button>
-
       <form
         className="flex-1 flex flex-col w-full justify-center gap-2 "
         action="/auth/sign-in"

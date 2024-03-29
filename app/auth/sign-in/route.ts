@@ -24,6 +24,12 @@ export async function POST(request: Request) {
     )
   }
 
+  supabase.auth.signInWithOAuth({
+    provider: 'google',
+  })
+
+  
+
   return NextResponse.redirect(
     `${requestUrl.origin}/login?message=Check email to continue sign in process`,
     {
